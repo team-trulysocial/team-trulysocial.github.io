@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Truly Social</title>
+  
+  <!-- Fonts + Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+  <!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+<!-- SEO & Meta Tags -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#9A1305" />
+<meta name="description" content="Truly Social is a premium creative service helping influencers grow their content, audience & brand — without burnout." />
+<meta name="keywords" content="Influencer Services, Content Strategy, Video Editing, Brand Building, Truly Social" />
+<meta name="author" content="Truly Social" />
+<meta property="og:title" content="Truly Social — Helping Influencers Become Brands" />
+<meta property="og:description" content="We help influencers grow with strategy, design & editing services so they can shine online." />
+<meta property="og:image" content="Logo.png" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://yourdomain.com" />
+<meta name="twitter:card" content="summary_large_image" />
+
+  
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="Logo.png" alt="Truly Social Logo" class="logo-img" />
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header id="hero">
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Helping Influencers<br><span class="highlight-stack">Become Brands.</span></h1>
+    <p class="tagline">Creative services to grow your content, audience, and brand — without burnout.</p>
+    <div class="cta-buttons">
+<!--       
+      <a href="#contact" class="btn primary glow-btn">Book Free Audit</a>
+      <a href="#services" class="btn secondary">Explore Services</a>
+-->
+    </div>
+    <div class="down-arrow">↓</div>
+  </div>
+</header>
+
+<!-- ===== PROBLEMS SECTION ===== -->
+<section id="problems" class="section">
+  <div class="scroll-loop-wrapper">
+    <div class="scroll-loop-title">
+      PROBLEMS&nbsp;&nbsp; PROBLEMS&nbsp;&nbsp; PROBLEMS&nbsp;&nbsp; PROBLEMS&nbsp;&nbsp; PROBLEMS&nbsp;&nbsp; PROBLEMS&nbsp;&nbsp; PROBLEMS
+    </div>
+  </div>
+  <h2 data-aos="fade-up">What’s Draining Creators</h2>
+  <div class="swiper problems-swiper" data-aos="fade-up">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide card">📹 No time to edit?<br><strong>We handle your content edits.</strong></div>
+      <div class="swiper-slide card">💡 Stuck on ideas?<br><strong>We give you weekly content prompts.</strong></div>
+      <div class="swiper-slide card">🎨 Messy feed?<br><strong>We design your content calendars.</strong></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== SERVICES ===== -->
+<section id="services" class="section" data-aos-anchor-placement="top-bottom">
+  <h2 data-aos="fade-up">What We Can Do for You</h2>
+  <p class="service-subtext" data-aos="fade-up">Script. Strategy. Design. Data. We’ll handle it, you just show up.</p>
+  <div class="grid service-grid">
+    <div class="service-card" data-aos="fade-up" data-aos-delay="0">🧠 Content Ideation</div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="100">✂️ Reels & YouTube Editing</div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="200">🖼️ Thumbnail/Design Help</div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="300">👨🏻‍💻 Website Making</div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="400">📅 Instagram Content Calendar</div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="500">📊 Analytics & Growth Reports</div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="600">📸 On-location Shoot </div>  
+    <div class="service-card" data-aos="fade-up" data-aos-delay="700">📝 Script Writing</div>  
+    <div class="service-card" data-aos="fade-up" data-aos-delay="800">✍️ Brand Video Conceptualising</div>  
+    <div class="service-card" data-aos="fade-up" data-aos-delay="900">🎥 Shoot Planning</div>  
+    <div class="service-card" data-aos="fade-up" data-aos-delay="1000">👩🏻‍💻 Trending Carousel Edits</div>  
+    <div class="service-card" data-aos="fade-up" data-aos-delay="1100">🎥 Photography & Videography</div>  
+  
+  </div>
+</section>
+
+
+<!-- ===== PRICING ===== -->
+<section id="pricing" class="section">
+  <h2>Pricing Plans</h2>
+
+  <div class="pricing-toggle-buttons">
+    <button onclick="showPlan('starter')" class="pricing-toggle" id="btn-starter">Frame One</button>
+    <button onclick="showPlan('growth')" class="pricing-toggle" id="btn-growth">Reel Deal</button>
+    <button onclick="showPlan('pro')" class="pricing-toggle" id="btn-pro">Main Character</button>
+    <button onclick="showPlan('addon')" class="pricing-toggle" id="btn-addon">Add Ons</button>
+  </div>
+  
+  <div class="grid" id="pricing-plans">
+    <div class="pricing-card" id="starter">
+      <img src="Frame One.png" alt="Starter Plan" class="pricing-image" />
+    </div>
+    <div class="pricing-card" id="growth" style="display:none">
+      <img src="Reel Deal.png" alt="Growth Plan" class="pricing-image" />
+    </div>
+    <div class="pricing-card" id="pro" style="display:none">
+      <img src="Main Character.png" alt="Pro Plan" class="pricing-image" />
+    </div>
+    <div class="pricing-card" id="addon" style="display:none">
+      <img src="Add Ons.png" alt="Add On Plan" class="pricing-image" />
+    </div>
+  </div>
+</section>
+
+<!-- ===== REEL VIDEO SHOWCASE ===== -->
+<section id="reels" class="section">
+  <h2 data-aos="fade-up">🎬 Our Glow-Ups in Action</h2>
+  <p class="reel-subtext" data-aos="fade-up">These creators trusted us with their reels — and it shows.</p>
+  <div class="reel-grid">
+    <div class="reel-card" data-aos="zoom-in" onclick="openModal('videos/edit1.mp4')">
+      <video src="video-output-50BF39B7-0EE8-4456-8A60-6E09BF54E0DD-1.mov" autoplay muted loop playsinline></video>
+    </div>
+    <div class="reel-card" data-aos="zoom-in" onclick="openModal('videos/edit2.mp4')">
+      <video src="video-output-166E9582-A917-49FD-9D66-48780ED5CC32-1.mov" autoplay muted loop playsinline></video>
+    </div>
+    <div class="reel-card" data-aos="zoom-in" onclick="openModal('videos/edit3.mp4')">
+      <video src="video-output-1045AAD2-30B1-401C-9868-387454CCA04B-1.mov" autoplay muted loop playsinline></video>
+    </div>
+    <div class="reel-card" data-aos="zoom-in" onclick="openModal('videos/edit4.mp4')">
+      <video src="video-output-F48F7258-1FF4-4A17-B367-A19B6535F600-1.mov" autoplay muted loop playsinline></video>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section id="testimonials" class="section">
+  <h2 data-aos="fade-up">Creators Who Glowed Up</h2>
+  <p class="testimonial-subtext" data-aos="fade-up">Hear what our people say when the chaos is off their plate 👇</p>
+  <div class="swiper testimonials-swiper" data-aos="fade-up">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide testimonial-card">“Grew from 12K to 80K in 3 months. Their calendar + content ideas changed everything.”<span>— Fashion Influencer</span></div>
+      <div class="swiper-slide testimonial-card">“Stopped stressing about editing. They handled it all.”<span>— Lifestyle Creator</span></div>
+      <div class="swiper-slide testimonial-card">“They gave me a real brand structure. Strategy calls were 🔥.”<span>— Fitness Coach</span></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <h2 data-aos="fade-up">Why Truly Social Exists</h2>
+  <div class="about-wrapper" data-aos="fade-up">
+    <div class="about-text">
+      <p>We started Truly Social to help creators stop burning out and start building real digital brands.</p>
+      <ul class="about-values">
+        <li>🎨 <strong>Creativity:</strong> Everything starts with your ideas.</li>
+        <li>📈 <strong>Consistency:</strong> We'll help you show up — always.</li>
+        <li>🪞 <strong>Transparency:</strong> You’ll always know what’s happening.</li>
+      </ul>
+    </div>
+    <div class="about-image">
+      <img src="Logo.png" alt="Founder" />
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT FORM ===== -->
+<section id="contact" class="section" data-aos-anchor-placement="top-bottom">
+  <h2 data-aos="fade-up">Let’s Work Together</h2>
+  <p class="contact-subtext" data-aos="fade-up">Fill this out — we’ll get back to you faster than your reel hits 10K.</p>
+  <form action="https://formsubmit.co/your-email@example.com" method="POST" data-aos="fade-up">
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="email" name="email" placeholder="Email" required inputmode="email" />
+    <input type="text" name="instagram" placeholder="Instagram Handle (optional)" />
+    <select name="service" required>
+      <option disabled selected>Type of Help Needed</option>
+      <option>Content Ideation</option>
+      <option>Video Editing</option>
+      <option>Strategy</option>
+    </select>
+    <textarea name="message" placeholder="Tell us what you need..." required></textarea>
+    <input type="hidden" name="_captcha" value="false">
+    <button type="submit" class="btn primary">Send Inquiry</button>
+  </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-inner">
+    <p>© 2025 Truly Social. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/trulysocial.co?igsh=MW9hMXF1emdiemhqeg==" target="_blank"><img src="instagram.png" alt=""></a>
+      <a href="mailto:tea.trulysocial@gmail.com" target="_blank">
+        <a href="mailto:youremail@gmail.com" target="_blank">
+          <img src="gmail ion.jpg" alt="Email" class="social-icon" />
+        </a>        
+  </div>
+</footer>
+
+<!-- ===== MODAL VIDEO PLAYER ===== -->
+<div id="videoModal" class="modal">
+  <span class="close" onclick="closeModal()">×</span>
+  <video id="modalVideo" controls autoplay></video>
+</div>
+
+<!-- ===== WHATSAPP FLOAT BUTTON (optional) ===== -->
+<a href="https://wa.me/919892252900" target="_blank" class="whatsapp-button">💬</a>
+
+<!-- ===== SCRIPTS ===== -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+
+  function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+  }
+
+
+
+  function openModal(videoSrc) {
+    const modal = document.getElementById("videoModal");
+    const modalVideo = document.getElementById("modalVideo");
+    modal.style.display = "flex";
+    modalVideo.src = videoSrc;
+    modalVideo.volume = 1;
+    modalVideo.play();
+  }
+
+  function closeModal() {
+    const modal = document.getElementById("videoModal");
+    const modalVideo = document.getElementById("modalVideo");
+    modal.style.display = "none";
+    modalVideo.pause();
+    modalVideo.currentTime = 0;
+    modalVideo.src = "";
+  }
+
+  window.addEventListener("click", function (e) {
+    if (e.target.id === "videoModal") closeModal();
+  });
+
+  window.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeModal();
+  });
+
+  new Swiper('.testimonials-swiper', {
+    slidesPerView: 1,
+    loop: true,
+    autoplay: { delay: 5000 },
+    pagination: { el: '.swiper-pagination', clickable: true }
+  });
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>

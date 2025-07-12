@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You - Truly Social</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #EFE3DB;
+      --background: #9A1305;
+      --accent: #833843;
+      --text: #F7F2F0;
+      --highlight: #D9B8AF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--text);
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 2em;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      color: var(--primary);
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: var(--text);
+      margin-bottom: 2em;
+      max-width: 500px;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 0.8em 2em;
+      background-color: var(--primary);
+      color: var(--background);
+      border-radius: 30px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--highlight);
+      color: var(--accent);
+    }
+
+    .glow {
+      animation: glowPulse 2s infinite;
+    }
+
+    @keyframes glowPulse {
+      0% { box-shadow: 0 0 8px var(--highlight); }
+      50% { box-shadow: 0 0 20px var(--primary); }
+      100% { box-shadow: 0 0 8px var(--highlight); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Thank You!</h1>
+  <p>We've received your message and we’ll get back to you very soon.  
+     You’re officially one step closer to becoming a brand ✨</p>
+
+  <a href="index.html" class="btn glow">Back to Home</a>
+</body>
+</html>

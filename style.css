@@ -92,7 +92,7 @@
     font-size: 2rem;
     margin-top: 1em;
     animation: bounce 1s infinite;
-    color: var(--primary);
+    color: var(--background);
   }
   
   .logo {
@@ -143,19 +143,19 @@
   header#hero {
     padding: 4em 2em;
     text-align: center;
-    background: var(--accent);
+    background: var(--primary);
   }
   
   .hero-content h1 {
     font-size: 2.5em;
-    color: var(--primary);
+    color: var(--background);
   }
   
   .hero-content p {
     font-size: 1.2em;
     margin: 1em auto;
     max-width: 600px;
-    color: var(--text);
+    color: var(--background);
   }
   
   .cta-buttons {
@@ -380,7 +380,7 @@
     position: absolute;
     left: 0;
     top: 2px;
-    color: var(--hover);
+    color: var(--background);
     z-index: -1;
     transform: scale(1.02);
     opacity: 0.4;
@@ -388,7 +388,7 @@
   
   .tagline {
     font-style: italic;
-    color: var(--text);
+    color: var(--background);
     font-weight: 400;
     margin-top: 0.5em;
     opacity: 0.9;
